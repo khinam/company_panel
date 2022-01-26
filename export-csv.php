@@ -26,19 +26,20 @@
         //     $row['phone'],
         //     $row['address']
 
-        fputcsv($fh, [
-            $row['staffID'],
-            $row['firstName'] . ' ' . $row['lastName'],
-            $row['email'],
-            $comname['company'],
-            $row['department'],
-            $row['phone'],
-            $row['address']
-    
-        ]);
+    fputcsv($fh, [
+        $row['staffID'],
+        $row['firstName'] . ' ' . $row['lastName'],
+        $row['email'],
+        $comname['company'],
+        $row['department'],
+        $row['phone'],
+        $row['address']
+
+    ]);
 
     //echo "\r\n";
     }
+
     fclose($fh);
 
 

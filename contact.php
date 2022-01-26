@@ -7,12 +7,10 @@
 
 <div class="right_col" role="main">
   <?php
-  
-    if(isset($result)){
-      echo "Mail sent Success";
-    }
-  
-  ?>
+      if(isset($result)) {
+        echo "Email Send Successfully";
+      }
+      ?>
     <h4 class="text-center">Contact Us</h4>
     <form action="contact-act.php" method="post" id="demo-form2" data-parsley-validate class="form-horizontal form-label-left">
       <div class="item form-group">
@@ -47,7 +45,7 @@
         <label class="col-form-label col-md-3 col-sm-3 label-align" for="messageInput">Message: <span class="required">*</span>
         </label>
         <div class="col-md-6 col-sm-6 ">
-          <textarea type="text" class="form-control" id="messageInput" name="message"></textarea>
+          <textarea type="text" class="form-control" id="messageInput" name="message" r equired="required"></textarea>
         </div>
       </div>
       <div class="item form-group mt-3">
